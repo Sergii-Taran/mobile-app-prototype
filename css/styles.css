@@ -1,0 +1,279 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #000;
+  /* background-color: #fafafa; */
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: currentColor;
+}
+
+button {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ----------------------------- */
+/* ------- common styles ------- */
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+/* ---------------------- */
+/* ------- header ------- */
+
+.header {
+}
+
+.header-container {
+}
+
+.header-nav {
+}
+
+.header-logo {
+}
+
+.header-nav-list {
+}
+
+.header-nav-item {
+}
+
+.header-nav-link {
+}
+
+/* -------------------- */
+/* ------- hero ------- */
+
+.hero {
+}
+
+.hero-container {
+}
+
+.hero-title {
+}
+
+.hero-subtitle {
+}
+
+.hero-list {
+}
+
+.hero-list-item {
+}
+
+.hero-list-text {
+}
+
+.hero-btn {
+}
+
+.hero-img {
+}
+
+/* ------------------------ */
+/* ------- features ------- */
+
+.features {
+}
+
+.features-container {
+}
+
+.features-title {
+}
+
+.features-text {
+}
+
+.features-list {
+}
+
+.features-list-item {
+}
+
+.features-item-title {
+}
+
+.features-item-text {
+}
+
+.features-img {
+}
+
+/* --------------------- */
+/* ------- watch ------- */
+
+.watch {
+}
+
+.watch-container {
+}
+
+.watch-title {
+}
+
+.watch-text {
+}
+
+.watch-system-list {
+}
+
+.watch-list-item {
+}
+
+.watch-list-link {
+}
+
+.watch-item-icon {
+}
+
+.watch-img {
+}
+
+/* -------------------- */
+/* ------- team ------- */
+
+.team {
+}
+
+.team-container {
+}
+
+.team-title {
+}
+
+.team-text {
+}
+
+.team-list {
+}
+
+.team-list-item {
+}
+
+.team-item-img {
+}
+
+.team-item-title {
+}
+
+/* ------------------------- */
+/* ------- custumers ------- */
+
+.costumer {
+}
+
+.costumer-container {
+}
+
+.costumer-title {
+}
+
+.costumer-img {
+}
+
+.costumer-subtitle {
+}
+
+.costumer-subtitle-text {
+}
+
+.costumer-text {
+}
+
+/* ---------------------- */
+/* ------- footer ------- */
+
+.footer {
+}
+
+.footer-container {
+}
+
+.footer-title {
+}
+
+.footer-subtitle {
+}
+
+.footer-text {
+}
+
+.footer-soc-list {
+}
+
+.footer-soc-item {
+}
+
+.footer-soc-link {
+}
+
+.footer-soc-icon {
+}
+
+.footer-address {
+}
+
+.footer-address-list {
+}
+
+.footer-address-item {
+}
+
+.footer-address-link {
+}
+
+.footer-copy {
+}
+
+/* ---------------------- */
