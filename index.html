@@ -26,31 +26,42 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <nav class="header-nav">
-          <a class="header-logo" href="./index.html">Mobileapp</a>
+        <a class="header-logo" href="./index.html" data-mobmenuname
+          >Mobileapp</a
+        >
+        <nav class="header-nav" data-mobmenu>
           <ul class="header-nav-list">
             <li class="header-nav-item">
-              <a class="header-nav-link" href="./index.html">HOME</a>
+              <a class="header-nav-link is-active" href="">HOME</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="">FEATURES</a>
+              <a class="header-nav-link" href="#features" data-mobmenufeatures
+                >FEATURES</a
+              >
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="">TEAM</a>
+              <a class="header-nav-link" href="#team" data-mobmenuteam>TEAM</a>
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="">TESTIMONIALS</a>
+              <a
+                class="header-nav-link"
+                href="#testimonials"
+                data-mobmenutestimonials
+                >TESTIMONIALS</a
+              >
             </li>
             <li class="header-nav-item">
-              <a class="header-nav-link" href="">CONTACT</a>
+              <a class="header-nav-link" href="#contact" data-mobmenucontact
+                >CONTACT</a
+              >
             </li>
           </ul>
         </nav>
-        <!-- <button type="button" class="menu-open-btn">
-          <svg class="menu-open-icon" width="26" height="16">
+        <button type="button" class="menu-open-btn">
+          <svg class="menu-open-icon" width="24" height="14">
             <use href="./images/icons.svg#icon-mobile-open-icon"></use>
           </svg>
-        </button> -->
+        </button>
       </div>
     </header>
 
@@ -61,35 +72,44 @@
           <h3 class="hero-subtitle">Download our mobile app today!</h3>
           <ul class="hero-list">
             <li class="hero-list-item">
+              <svg class="hero-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-hero-icon"></use>
+              </svg>
               <p class="hero-list-text">
                 Real-time updates and notifications for timely information
               </p>
             </li>
             <li class="hero-list-item">
+              <svg class="hero-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-hero-icon"></use>
+              </svg>
               <p class="hero-list-text">
                 Robust analytics and reporting for data-driven insights
               </p>
             </li>
             <li class="hero-list-item">
+              <svg class="hero-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-hero-icon"></use>
+              </svg>
               <p class="hero-list-text">
                 Offline capabilities for uninterrupted use
               </p>
             </li>
           </ul>
           <button class="hero-btn" type="submit">Download</button>
-          <img
-            class="hero-img"
-            src="./images/hero/hero-img.png"
-            alt="Mobile app"
-            width="896"
-          />
         </div>
+        <img
+          class="hero-img"
+          src="./images/hero/hero-img.png"
+          alt="Mobile app"
+          width="896"
+        />
       </section>
 
-      <section class="features">
+      <!-- <section class="features" id="features">
         <div class="container features-container">
-          <h2 class="features-title">KEY FEATURES</h2>
-          <p class="features-text">
+          <h2 class="features-title section-title">KEY FEATURES</h2>
+          <p class="features-text section-text">
             Get the best mobile experience with our Mobileapp. With a
             user-friendly interface, personalized recommendations, secure
             transactions, and real-time updates, our app offers everything you
@@ -151,34 +171,36 @@
             width="396"
           />
         </div>
-      </section>
+      </section> -->
 
-      <section class="watch">
+      <!-- <section class="watch">
         <div class="container watch-container">
-          <h2 class="watch-title">WATCH THE VIDEO</h2>
-          <p class="watch-text">
-            Watch the video below to see our mobile app in action. With a
-            user-friendly interface, personalized recommendations, secure
-            transactions, and real-time updates, our app is available for
-            download on both Apple and Android devices and is designed to make
-            your life easier.
-          </p>
-          <ul class="watch-system-list">
-            <li class="watch-list-item">
-              <a class="watch-list-link" href="">
-                <svg class="watch-item-icon" width="30" height="30">
-                  <use href="./images/icons.svg#icon-apple-icon"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="watch-list-item">
-              <a class="watch-list-link" href="">
-                <svg class="watch-item-icon" width="30" height="30">
-                  <use href="./images/icons.svg#icon-system-icon-2"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <div>
+            <h2 class="watch-title section-title">WATCH THE VIDEO</h2>
+            <p class="watch-text section-text">
+              Watch the video below to see our mobile app in action. With a
+              user-friendly interface, personalized recommendations, secure
+              transactions, and real-time updates, our app is available for
+              download on both Apple and Android devices and is designed to make
+              your life easier.
+            </p>
+            <ul class="watch-system-list">
+              <li class="watch-list-item">
+                <a class="watch-list-link" href="">
+                  <svg class="watch-item-icon" width="30" height="30">
+                    <use href="./images/icons.svg#icon-apple-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="watch-list-item">
+                <a class="watch-list-link" href="">
+                  <svg class="watch-item-icon" width="30" height="30">
+                    <use href="./images/icons.svg#icon-system-icon-2"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
           <img
             class="watch-img"
             src="./images/watch/watch-img.png"
@@ -186,12 +208,12 @@
             width="500"
           />
         </div>
-      </section>
+      </section> -->
 
-      <section class="team">
+      <!-- <section class="team" id="team">
         <div class="container team-container">
-          <h2 class="team-title">OUR TEAM</h2>
-          <p class="team-text">
+          <h2 class="team-title section-title">OUR TEAM</h2>
+          <p class="team-text section-text">
             Our team is made up of talented and passionate individuals who are
             committed to providing the best experience for our users. Each
             member brings a unique set of skills and expertise to the table,
@@ -199,7 +221,7 @@
             goals.
           </p>
           <ul class="team-list">
-            <li class="team-list-item">
+            <li class="team-list-item list-item-1">
               <img
                 class="team-item-img"
                 src="./images/team-desktop/team-image1.jpg"
@@ -207,9 +229,9 @@
                 width="264"
               />
               <h3 class="team-item-title">David Patel</h3>
-              <p team-item-text>Managing Director</p>
+              <p class="team-item-text section-text">Managing Director</p>
             </li>
-            <li class="team-list-item">
+            <li class="team-list-item list-item-2">
               <img
                 class="team-item-img"
                 src="./images/team-desktop/team-image2.jpg"
@@ -217,9 +239,9 @@
                 width="264"
               />
               <h3 class="team-item-title">Rachel Kim</h3>
-              <p team-item-text>Lead Designer</p>
+              <p class="team-item-text section-text">Lead Designer</p>
             </li>
-            <li class="team-list-item">
+            <li class="team-list-item list-item-3">
               <img
                 class="team-item-img"
                 src="./images/team-desktop/team-image3.jpg"
@@ -227,9 +249,9 @@
                 width="264"
               />
               <h3 class="team-item-title">Samantha Chen</h3>
-              <p team-item-text>Lead Developer</p>
+              <p class="team-item-text section-text">Lead Developer</p>
             </li>
-            <li class="team-list-item">
+            <li class="team-list-item list-item-4">
               <img
                 class="team-item-img"
                 src="./images/team-desktop/team-image4.jpg"
@@ -237,15 +259,15 @@
                 width="264"
               />
               <h3 class="team-item-title">Andrew Nguyen</h3>
-              <p team-item-text>Sr. UI Designer</p>
+              <p class="team-item-text section-text">Sr. UI Designer</p>
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="costumer">
+      <!-- <section class="costumer" id="testimonials">
         <div class="container costumer-container">
-          <h2 class="costumer-title">WHAT OUR COSTUMER’S SAY</h2>
+          <h2 class="costumer-title section-title">WHAT OUR COSTUMER’S SAY</h2>
           <img
             class="costumer-img"
             src="./images/customer-img.jpg"
@@ -254,7 +276,7 @@
           />
           <h3 class="costumer-subtitle">Jon Doe</h3>
           <p class="costumer-subtitle-text">Company Inc.</p>
-          <p class="costumer-text">
+          <p class="costumer-text section-text">
             I've been using this app for a few weeks now and I have to say, I'm
             really impressed. It's so easy to use and the personalized
             recommendations are spot-on. Plus, the transactions are secure and
@@ -262,14 +284,14 @@
             to anyone looking for a better mobile experience
           </p>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer" id="contact">
       <div class="container footer-container">
-        <h2 class="footer-title">CONTACT US</h2>
+        <h2 class="footer-title section-title">CONTACT US</h2>
         <h3 class="footer-subtitle">Get in touch with us</h3>
-        <p class="footer-text">
+        <p class="footer-text section-text">
           Have a question or comment about our app? Get in touch with us using
           the contact form below and our team will respond shortly.
         </p>
@@ -306,7 +328,7 @@
             </li>
           </ul>
         </address>
-        <!-- <form action="">
+        <form action="">
           <label for=""></label>
           <input type="text" />
           <label for=""></label>
@@ -314,11 +336,11 @@
           <label for=""></label>
           <textarea name="" id=""></textarea>
           <button type="submit">SUBMIT</button>
-        </form> -->
+        </form>
         <p class="footer-copy">
           &copy; 2019 GoIteens Template. All Rights Reserved
         </p>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>

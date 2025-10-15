@@ -61,63 +61,226 @@ button {
 
 .container {
   width: 100%;
-  max-width: 1280px;
-  padding: 0 16px;
+  max-width: 320px;
+  padding: 0 20px;
   margin: 0 auto;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.section-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .section-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 16px;
+  }
 }
 
 /* ---------------------- */
 /* ------- header ------- */
 
 .header {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+  backdrop-filter: blur(35px);
+  background: linear-gradient(
+    99deg,
+    rgba(0, 197, 235, 0.3) 0%,
+    rgba(181, 68, 254, 0.3) 100%
+  );
+
+  padding: 14px 0;
 }
 
 .header-container {
-}
-
-.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-logo {
+  font-weight: 400;
+  font-size: 28px;
+  color: #fff;
 }
 
-.header-nav-list {
+.header-nav {
+  display: none;
 }
 
-.header-nav-item {
+.menu-open-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.header-nav-link {
+.menu-open-icon {
+  stroke-width: 2px;
+  stroke: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 0;
+  }
+
+  .header-nav {
+    display: block;
+    margin-left: auto;
+  }
+
+  .header-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .header-nav-link {
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+
+    display: block;
+    padding: 24px 0;
+
+    transition: color 250ms ease, background 250ms ease;
+  }
+
+  .header-nav-link:hover,
+  .header-nav-link:focus {
+    background: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .menu-open-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header-nav-link {
+    padding: 28px 0;
+  }
 }
 
 /* -------------------- */
 /* ------- hero ------- */
 
 .hero {
+  position: relative;
+  background-color: #06071b;
 }
 
 .hero-container {
+  padding-top: 244px;
+  padding-bottom: 146px;
 }
 
 .hero-title {
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 12px;
 }
 
 .hero-subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 28px;
 }
 
 .hero-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  margin-bottom: 62px;
+  padding: 0;
 }
 
 .hero-list-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.hero-icon {
+  fill: #fff;
 }
 
 .hero-list-text {
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
 }
 
 .hero-btn {
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+  padding: 12px 60px;
+
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%) padding-box,
+    linear-gradient(99deg, #00c5eb 0%, #b544fe 100%) border-box;
+  border: 1px solid transparent;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background: linear-gradient(#06071b 0 0) padding-box,
+    linear-gradient(99deg, #00c5eb 0%, #b544fe 100%) border-box;
 }
 
 .hero-img {
+  display: block;
+  position: absolute;
+  top: 220px;
+  right: 100px;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1280px) {
 }
 
 /* ------------------------ */
@@ -127,6 +290,7 @@ button {
 }
 
 .features-container {
+  padding: 100px 0;
 }
 
 .features-title {
@@ -150,34 +314,84 @@ button {
 .features-img {
 }
 
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1280px) {
+}
+
 /* --------------------- */
 /* ------- watch ------- */
 
 .watch {
+  background-color: #06071b;
 }
 
 .watch-container {
+  padding: 60px 0;
+
+  display: flex;
+  gap: 160px;
 }
 
 .watch-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
 .watch-text {
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  max-width: 465px;
+  margin-bottom: 40px;
 }
 
 .watch-system-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .watch-list-item {
+  width: 60px;
+  height: 60px;
 }
 
 .watch-list-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+
+  background: linear-gradient(99deg, #00c5eb 0%, #b544fe 100%);
+
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+
+.watch-list-link:hover,
+.watch-list-link:focus {
+  background: linear-gradient(#06071b 0 0) padding-box,
+    linear-gradient(99deg, #00c5eb 0%, #b544fe 100%) border-box;
+  border: 2px solid transparent;
 }
 
 .watch-item-icon {
+  fill: #fff;
 }
 
 .watch-img {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1280px) {
 }
 
 /* -------------------- */
@@ -187,24 +401,108 @@ button {
 }
 
 .team-container {
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
 .team-title {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 80px;
 }
 
 .team-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 886px;
+  margin: 0 auto;
+  margin-bottom: 56px;
 }
 
 .team-list {
+  display: flex;
+  gap: 32px;
 }
 
 .team-list-item {
+  border-radius: 15px;
+  width: 288px;
+  height: 364px;
+
+  padding: 14px 12px 12px 12px;
+}
+
+.list-item-1 {
+  backdrop-filter: blur(35px);
+  background: linear-gradient(
+      318deg,
+      rgba(0, 197, 235, 0.5) 0%,
+      rgba(181, 68, 254, 0.5) 100%
+    ),
+    #06071b;
+}
+
+.list-item-2 {
+  backdrop-filter: blur(35px);
+  background: linear-gradient(
+      115deg,
+      rgba(0, 197, 235, 0.5) 0%,
+      rgba(181, 68, 254, 0.5) 100%
+    ),
+    #06071b;
+}
+
+.list-item-3 {
+  backdrop-filter: blur(35px);
+  background: linear-gradient(
+      197deg,
+      rgba(0, 197, 235, 0.5) 0%,
+      rgba(181, 68, 254, 0.5) 100%
+    ),
+    #06071b;
+}
+
+.list-item-4 {
+  backdrop-filter: blur(35px);
+  background: linear-gradient(
+      319deg,
+      rgba(0, 197, 235, 0.5) 0%,
+      rgba(181, 68, 254, 0.5) 100%
+    ),
+    #06071b;
 }
 
 .team-item-img {
+  width: 264px;
+  height: 260px;
+  border-radius: 10px;
+  object-fit: cover;
 }
 
 .team-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.team-item-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71429;
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1280px) {
 }
 
 /* ------------------------- */
@@ -214,21 +512,60 @@ button {
 }
 
 .costumer-container {
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 .costumer-title {
+  font-weight: 700;
+  font-size: 24px;
+
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .costumer-img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  object-fit: cover;
+
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.25);
 }
 
 .costumer-subtitle {
+  font-weight: 700;
+  font-size: 18px;
+
+  text-align: center;
+  margin-bottom: 12px;
 }
 
 .costumer-subtitle-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .costumer-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 886px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1280px) {
 }
 
 /* ---------------------- */
@@ -276,4 +613,16 @@ button {
 .footer-copy {
 }
 
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1280px) {
+}
+
 /* ---------------------- */
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1280px) {
+}
