@@ -69,7 +69,8 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Introducing Mobileapp</h1>
-          <h3 class="hero-subtitle">Download our mobile app today!</h3>
+          <p class="hero-subtitle">Download our mobile app today!</p>
+
           <ul class="hero-list">
             <li class="hero-list-item">
               <svg class="hero-icon" width="18" height="18">
@@ -96,14 +97,34 @@
               </p>
             </li>
           </ul>
-          <button class="hero-btn" type="submit">Download</button>
+
+          <button class="hero-btn" type="button">Download</button>
         </div>
-        <img
-          class="hero-img"
-          src="./images/hero/hero-img.png"
-          alt="Mobile app"
-          width="896"
-        />
+
+        <picture class="hero-picture">
+          <source
+            srcset="
+              ./images/hero/hero-img.png,
+              ./images/hero/hero-img@2x.png 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./images/hero/hero-img-tab.png,
+              ./images/hero/hero-img-tab@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <img
+            class="hero-img"
+            src="./images/hero/hero-img.png"
+            alt="Mobile app"
+            width="896"
+          />
+        </picture>
+
+        <img class="hero-spray" src="./images/hero/hero-spray.png" alt="" />
       </section>
 
       <!-- <section class="features" id="features">
@@ -265,26 +286,43 @@
         </div>
       </section> -->
 
-      <!-- <section class="costumer" id="testimonials">
-        <div class="container costumer-container">
-          <h2 class="costumer-title section-title">WHAT OUR COSTUMER’S SAY</h2>
+      <section class="customer" id="testimonials">
+        <div class="container customer-container">
+          <h2 class="customer-title section-title">WHAT OUR COSTUMER’S SAY</h2>
           <img
-            class="costumer-img"
+            class="customer-img"
             src="./images/customer-img.jpg"
             alt="Jon Doe"
             width="180"
           />
-          <h3 class="costumer-subtitle">Jon Doe</h3>
-          <p class="costumer-subtitle-text">Company Inc.</p>
-          <p class="costumer-text section-text">
+          <h3 class="customer-subtitle">Jon Doe</h3>
+          <p class="customer-subtitle-text">Company Inc.</p>
+          <p class="customer-text section-text">
             I've been using this app for a few weeks now and I have to say, I'm
             really impressed. It's so easy to use and the personalized
             recommendations are spot-on. Plus, the transactions are secure and
             the updates are always timely. I would definitely recommend this app
             to anyone looking for a better mobile experience
           </p>
+          <img
+            class="customer-point"
+            src="./images/customer-point.png"
+            alt="Customer point"
+            width="76"
+          />
         </div>
-      </section> -->
+
+        <img
+          class="customer-spray-2"
+          src="./images/customer-spray-2.png"
+          alt=""
+        />
+        <img
+          class="customer-spray-3"
+          src="./images/customer-spray-3.png"
+          alt=""
+        />
+      </section>
     </main>
 
     <!-- <footer class="footer" id="contact">
