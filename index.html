@@ -124,10 +124,14 @@
           />
         </picture>
 
-        <img class="hero-spray" src="./images/hero/hero-spray.png" alt="" />
+        <img
+          class="hero-spray"
+          src="./images/hero/hero-spray.png"
+          alt="decorative image"
+        />
       </section>
 
-      <!-- <section class="features" id="features">
+      <section class="features" id="features">
         <div class="container features-container">
           <h2 class="features-title section-title">KEY FEATURES</h2>
           <p class="features-text section-text">
@@ -136,15 +140,58 @@
             transactions, and real-time updates, our app offers everything you
             need to stay connected and productive
           </p>
+          <picture class="features-pictures">
+            <source
+              srcset="
+                ./images/features/features-img.png,
+                ./images/features/features-img@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/features/features-img-tab.png,
+                ./images/features/features-img-tab@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/features/features-img-mob.png,
+                ./images/features/features-img-mob@2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              class="features-img"
+              src="./images/features/features-img.png"
+              alt="User with laptop"
+              width="396"
+            />
+          </picture>
           <ul class="features-list">
             <li class="features-list-item">
-              <h3 class="features-item-title">User-Friendly Interface:</h3>
-              <p class="features-item-text">
-                Intuitive and easy-to-navigate interface designed to provide a
-                seamless mobile experience for users.
-              </p>
+              <img
+                class="features-list-img"
+                src="./images/features/features-list-img.png"
+                alt="features marker"
+                width="28"
+              />
+              <div class="features-list-subcontainer">
+                <h3 class="features-item-title">User-Friendly Interface:</h3>
+                <p class="features-item-text">
+                  Intuitive and easy-to-navigate interface designed to provide a
+                  seamless mobile experience for users.
+                </p>
+              </div>
             </li>
             <li class="features-list-item">
+              <img
+                class="features-list-img"
+                src="./images/features/features-list-img.png"
+                alt="features marker"
+                width="28"
+              />
               <h3 class="features-item-title">Personalized Recommendations:</h3>
               <p class="features-item-text">
                 The app provides personalized recommendations based on user
@@ -153,6 +200,12 @@
               </p>
             </li>
             <li class="features-list-item">
+              <img
+                class="features-list-img"
+                src="./images/features/features-list-img.png"
+                alt="features marker"
+                width="28"
+              />
               <h3 class="features-item-title">Real-Time Updates:</h3>
               <p class="features-item-text">
                 Users receive real-time updates and notifications to stay
@@ -161,6 +214,12 @@
               </p>
             </li>
             <li class="features-list-item">
+              <img
+                class="features-list-img"
+                src="./images/features/features-list-img.png"
+                alt="features marker"
+                width="28"
+              />
               <h3 class="features-item-title">Integration with Other Apps:</h3>
               <p class="features-item-text">
                 The app integrates with other popular apps, making it easy for
@@ -169,6 +228,12 @@
               </p>
             </li>
             <li class="features-list-item">
+              <img
+                class="features-list-img"
+                src="./images/features/features-list-img.png"
+                alt="features marker"
+                width="28"
+              />
               <h3 class="features-item-title">Multi-Language Support:</h3>
               <p class="features-item-text">
                 The app is designed to be accessible to users all around the
@@ -177,6 +242,12 @@
               </p>
             </li>
             <li class="features-list-item">
+              <img
+                class="features-list-img"
+                src="./images/features/features-list-img.png"
+                alt="features marker"
+                width="28"
+              />
               <h3 class="features-item-title">Offline Capabilities:</h3>
               <p class="features-item-text">
                 The app offers offline capabilities, allowing users to access
@@ -185,18 +256,12 @@
               </p>
             </li>
           </ul>
-          <img
-            class="features-img"
-            src="./images/features/features-img.png"
-            alt="User with laptop"
-            width="396"
-          />
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="watch">
+      <section class="watch">
         <div class="container watch-container">
-          <div>
+          <div class="watch-subcontainer">
             <h2 class="watch-title section-title">WATCH THE VIDEO</h2>
             <p class="watch-text section-text">
               Watch the video below to see our mobile app in action. With a
@@ -207,14 +272,22 @@
             </p>
             <ul class="watch-system-list">
               <li class="watch-list-item">
-                <a class="watch-list-link" href="">
+                <a
+                  class="watch-list-link"
+                  href=""
+                  aria-label="Download on Apple Store"
+                >
                   <svg class="watch-item-icon" width="30" height="30">
                     <use href="./images/icons.svg#icon-apple-icon"></use>
                   </svg>
                 </a>
               </li>
               <li class="watch-list-item">
-                <a class="watch-list-link" href="">
+                <a
+                  class="watch-list-link"
+                  href=""
+                  aria-label="Download on Android Store"
+                >
                   <svg class="watch-item-icon" width="30" height="30">
                     <use href="./images/icons.svg#icon-system-icon-2"></use>
                   </svg>
@@ -222,14 +295,43 @@
               </li>
             </ul>
           </div>
-          <img
-            class="watch-img"
-            src="./images/watch/watch-img.png"
-            alt="Mobile phone video"
-            width="500"
-          />
+          <picture class="watch-picture">
+            <source
+              srcset="
+                ./images/watch/watch-img.png,
+                ./images/watch/watch-img@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="
+                ./images/watch/watch-img-tab.png,
+                ./images/watch/watch-img-tab@2x.png 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="
+                ./images/watch/watch-img-mob.png,
+                ./images/watch/watch-img-mob@2x.png 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img
+              class="watch-img"
+              src="./images/watch/watch-img.png"
+              alt="Mobile phone video"
+              width="500"
+              loading="lazy"
+            />
+          </picture>
         </div>
-      </section> -->
+        <img
+          class="watch-spray"
+          src="./images/hero/hero-spray.png"
+          alt="decorative image"
+        />
+      </section>
 
       <!-- <section class="team" id="team">
         <div class="container team-container">
@@ -292,6 +394,7 @@
           <img
             class="customer-img"
             src="./images/customer-img.jpg"
+            srcset="./images/customer-img.jpg, ./images/customer-img@2x 2x.jpg"
             alt="Jon Doe"
             width="180"
           />
@@ -315,12 +418,12 @@
         <img
           class="customer-spray-2"
           src="./images/customer-spray-2.png"
-          alt=""
+          alt="decorative image"
         />
         <img
           class="customer-spray-3"
           src="./images/customer-spray-3.png"
-          alt=""
+          alt="decorative image"
         />
       </section>
     </main>
