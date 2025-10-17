@@ -381,10 +381,19 @@ button {
 }
 
 .features-title {
+  margin: 0;
 }
 
 .features-text {
   text-align: center;
+  margin: 0;
+  max-width: 280px;
+}
+
+.features-content {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
 }
 
 .features-pictures {
@@ -401,6 +410,7 @@ button {
   align-items: flex-start;
 
   gap: 4px;
+  max-width: 280px;
 }
 
 .features-list-subcontainer {
@@ -413,14 +423,21 @@ button {
   flex-shrink: 0;
   width: 28px;
   height: 28px;
+
+  transform: translateY(-5px);
 }
 
 .features-item-title {
-  margin: 6px 0 0 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
 }
 
 .features-item-text {
   margin: 0;
+  font-weight: 500;
+  font-size: 12px;
 }
 
 .features-img {
@@ -428,9 +445,79 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  .features {
+    position: relative;
+
+    background-image: url(../images/features/features-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+  }
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero {
+      background-image: url(../images/features/features-bg@2x.png);
+    }
+  }
+
+  .features-container {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .features-text {
+    max-width: 704px;
+  }
+
+  .features-content {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .features-list {
+    gap: 50px;
+  }
+
+  .features-list-item:last-child {
+    position: absolute;
+    left: 60px;
+    bottom: 64px;
+  }
+
+  .features-item-title {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .features-item-text {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
+  .features {
+    background-image: none;
+  }
+
+  .features-container {
+    padding-bottom: 100px;
+    display: block;
+  }
+
+  .features-title {
+    margin-bottom: 80px;
+    text-align: center;
+  }
+
+  .features-text {
+    max-width: 856px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 56px;
+  }
 }
 
 /* --------------------- */
