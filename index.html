@@ -65,6 +65,27 @@
       </div>
     </header>
 
+    <div class="mobile-menu" data-menu>
+      <div class="mobile-menu-top">
+        <a href="./index.html" class="mobile-menu-logo">Mobileapp</a>
+        <button type="button" class="menu-close-btn">
+          <svg class="menu-close-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-mobile-close-icon"></use>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-list">
+        <li><a href="#hero" class="mobile-menu-link is-active">HOME</a></li>
+        <li><a href="#features" class="mobile-menu-link">FEATURES</a></li>
+        <li><a href="#team" class="mobile-menu-link">TEAM</a></li>
+        <li>
+          <a href="#testimonials" class="mobile-menu-link">TESTIMONIALS</a>
+        </li>
+        <li><a href="#contact" class="mobile-menu-link">CONTACT</a></li>
+      </ul>
+    </div>
+
     <main>
       <section class="hero">
         <div class="container hero-container">
@@ -170,108 +191,114 @@
                 width="396"
               />
             </picture>
-            <ul class="features-list">
-              <li class="features-list-item">
-                <img
-                  class="features-list-img"
-                  src="./images/features/features-list-img.png"
-                  alt="features marker"
-                  width="28"
-                />
-                <div class="features-list-subcontainer">
-                  <h3 class="features-item-title">User-Friendly Interface:</h3>
-                  <p class="features-item-text">
-                    Intuitive and easy-to-navigate interface designed to provide
-                    a seamless mobile experience for users.
-                  </p>
-                </div>
-              </li>
-              <li class="features-list-item">
-                <img
-                  class="features-list-img"
-                  src="./images/features/features-list-img.png"
-                  alt="features marker"
-                  width="28"
-                />
-                <div class="features-list-subcontainer">
-                  <h3 class="features-item-title">
-                    Personalized Recommendations:
-                  </h3>
-                  <p class="features-item-text">
-                    The app provides personalized recommendations based on user
-                    preferences and behavior, allowing for more relevant content
-                    and a more engaging experience.
-                  </p>
-                </div>
-              </li>
-              <li class="features-list-item">
-                <img
-                  class="features-list-img"
-                  src="./images/features/features-list-img.png"
-                  alt="features marker"
-                  width="28"
-                />
-                <div class="features-list-subcontainer">
-                  <h3 class="features-item-title">Real-Time Updates:</h3>
-                  <p class="features-item-text">
-                    Users receive real-time updates and notifications to stay
-                    informed on important news and events, and to stay
-                    up-to-date with changes to the app.
-                  </p>
-                </div>
-              </li>
-              <li class="features-list-item">
-                <img
-                  class="features-list-img"
-                  src="./images/features/features-list-img.png"
-                  alt="features marker"
-                  width="28"
-                />
-                <div class="features-list-subcontainer">
-                  <h3 class="features-item-title">
-                    Integration with Other Apps:
-                  </h3>
-                  <p class="features-item-text">
-                    The app integrates with other popular apps, making it easy
-                    for users to connect with their social media accounts, or to
-                    easily make in-app purchases using their preferred payment
-                    method.
-                  </p>
-                </div>
-              </li>
-              <li class="features-list-item">
-                <img
-                  class="features-list-img"
-                  src="./images/features/features-list-img.png"
-                  alt="features marker"
-                  width="28"
-                />
-                <div class="features-list-subcontainer">
-                  <h3 class="features-item-title">Multi-Language Support:</h3>
-                  <p class="features-item-text">
-                    The app is designed to be accessible to users all around the
-                    world, with support for multiple languages, making it easier
-                    for people to use the app in their native language.
-                  </p>
-                </div>
-              </li>
-              <li class="features-list-item">
-                <img
-                  class="features-list-img"
-                  src="./images/features/features-list-img.png"
-                  alt="features marker"
-                  width="28"
-                />
-                <div class="features-list-subcontainer">
-                  <h3 class="features-item-title">Offline Capabilities:</h3>
-                  <p class="features-item-text">
-                    The app offers offline capabilities, allowing users to
-                    access certain features and content even when they are not
-                    connected to the internet.
-                  </p>
-                </div>
-              </li>
-            </ul>
+            <div class="features-list">
+              <ul class="features-column-left">
+                <li class="features-list-item">
+                  <img
+                    class="features-list-img"
+                    src="./images/features/features-list-img.png"
+                    alt="features marker"
+                    width="28"
+                  />
+                  <div class="features-list-subcontainer">
+                    <h3 class="features-item-title">
+                      User-Friendly Interface:
+                    </h3>
+                    <p class="features-item-text">
+                      Intuitive and easy-to-navigate interface designed to
+                      provide a seamless mobile experience for users.
+                    </p>
+                  </div>
+                </li>
+                <li class="features-list-item">
+                  <img
+                    class="features-list-img"
+                    src="./images/features/features-list-img.png"
+                    alt="features marker"
+                    width="28"
+                  />
+                  <div class="features-list-subcontainer">
+                    <h3 class="features-item-title">
+                      Personalized Recommendations:
+                    </h3>
+                    <p class="features-item-text">
+                      The app provides personalized recommendations based on
+                      user preferences and behavior, allowing for more relevant
+                      content and a more engaging experience.
+                    </p>
+                  </div>
+                </li>
+                <li class="features-list-item">
+                  <img
+                    class="features-list-img"
+                    src="./images/features/features-list-img.png"
+                    alt="features marker"
+                    width="28"
+                  />
+                  <div class="features-list-subcontainer">
+                    <h3 class="features-item-title">Real-Time Updates:</h3>
+                    <p class="features-item-text">
+                      Users receive real-time updates and notifications to stay
+                      informed on important news and events, and to stay
+                      up-to-date with changes to the app.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="features-column-right">
+                <li class="features-list-item">
+                  <img
+                    class="features-list-img"
+                    src="./images/features/features-list-img.png"
+                    alt="features marker"
+                    width="28"
+                  />
+                  <div class="features-list-subcontainer">
+                    <h3 class="features-item-title">
+                      Integration with Other Apps:
+                    </h3>
+                    <p class="features-item-text">
+                      The app integrates with other popular apps, making it easy
+                      for users to connect with their social media accounts, or
+                      to easily make in-app purchases using their preferred
+                      payment method.
+                    </p>
+                  </div>
+                </li>
+                <li class="features-list-item">
+                  <img
+                    class="features-list-img"
+                    src="./images/features/features-list-img.png"
+                    alt="features marker"
+                    width="28"
+                  />
+                  <div class="features-list-subcontainer">
+                    <h3 class="features-item-title">Multi-Language Support:</h3>
+                    <p class="features-item-text">
+                      The app is designed to be accessible to users all around
+                      the world, with support for multiple languages, making it
+                      easier for people to use the app in their native language.
+                    </p>
+                  </div>
+                </li>
+                <li class="features-list-item">
+                  <img
+                    class="features-list-img"
+                    src="./images/features/features-list-img.png"
+                    alt="features marker"
+                    width="28"
+                  />
+                  <div class="features-list-subcontainer">
+                    <h3 class="features-item-title">Offline Capabilities:</h3>
+                    <p class="features-item-text">
+                      The app offers offline capabilities, allowing users to
+                      access certain features and content even when they are not
+                      connected to the internet.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -545,55 +572,99 @@
     <footer class="footer" id="contact">
       <div class="container footer-container">
         <h2 class="footer-title section-title">CONTACT US</h2>
-        <h3 class="footer-subtitle">Get in touch with us</h3>
-        <p class="footer-text section-text">
-          Have a question or comment about our app? Get in touch with us using
-          the contact form below and our team will respond shortly.
-        </p>
-        <ul class="footer-soc-list">
-          <li class="footer-soc-item">
-            <a class="footer-soc-link" href="">
-              <svg class="footer-soc-icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-fb-icon"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-soc-item">
-            <a class="footer-soc-link" href="">
-              <svg class="footer-soc-icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-twit-icon"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer-soc-item">
-            <a class="footer-soc-link" href="">
-              <svg class="footer-soc-icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-linkedin-icon"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <address class="footer-address">
-          <ul class="footer-address-list">
-            <li class="footer-address-item">
-              <a class="footer-address-link" href="">+xx-xxxx-xxxx-xx</a>
-            </li>
-            <li class="footer-address-item">
-              <a class="footer-address-link" href="">goIteens@gmail.com</a>
-            </li>
-          </ul>
-        </address>
-        <form action="">
-          <label for=""></label>
-          <input type="text" />
-          <label for=""></label>
-          <input type="email" name="" id="" />
-          <label for=""></label>
-          <textarea name="" id=""></textarea>
-          <button type="submit">SUBMIT</button>
-        </form>
+
+        <div class="footer-subcontainer">
+          <form class="footer-form" novalidate aria-label="Contact form">
+            <div class="input-field">
+              <label for="user-name" class="visually-hidden">Name</label>
+              <input
+                type="text"
+                class="footer-input"
+                name="user-name"
+                required
+                id="user-name"
+                placeholder="Name"
+                autocomplete="name"
+              />
+              <label for="user-email" class="visually-hidden">Email</label>
+              <input
+                type="email"
+                class="footer-input"
+                name="user-email"
+                id="user-email"
+                placeholder="Email"
+                autocomplete="email"
+              />
+            </div>
+
+            <label for="user-text" class="visually-hidden">Message</label>
+            <textarea
+              name="user-text"
+              class="user-message"
+              id="user-text"
+              placeholder="Message"
+            ></textarea>
+
+            <button
+              type="submit"
+              class="footer-btn"
+              aria-label="Submit contact form"
+            >
+              SUBMIT
+            </button>
+          </form>
+
+          <div class="contacts-container">
+            <h3 class="footer-subtitle">Get in touch with us</h3>
+            <p class="footer-text section-text">
+              Have a question or comment about our app? Get in touch with us
+              using the contact form below and our team will respond shortly.
+            </p>
+
+            <ul class="footer-soc-list">
+              <li class="footer-soc-item">
+                <a class="footer-soc-link" href="">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-fb-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a class="footer-soc-link" href="">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twit-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-soc-item">
+                <a class="footer-soc-link" href="">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <address class="footer-address">
+              <ul class="footer-address-list">
+                <li class="footer-address-item">
+                  <a class="footer-address-link" href="tel:+xxxxxxxxxx"
+                    >+xx-xxxx-xxxx-xx</a
+                  >
+                </li>
+                <li class="footer-address-item">
+                  <a
+                    class="footer-address-link"
+                    href="mailto:goIteens@gmail.com"
+                    >goIteens@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+        </div>
+
         <p class="footer-copy">
-          &copy; 2019 GoIteens Template. All Rights Reserved
+          <small>&copy; 2019 GoIteens Template. All Rights Reserved</small>
         </p>
       </div>
     </footer>
